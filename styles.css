@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6, span {
     color: white;
     text-align: center;
     line-height: 1.25;
-    
 }
 
 h1 {
@@ -203,11 +202,12 @@ nav {
 
 .about-me__picture {
     width: 100%;
-    transform: scale(1);
+    transform: scale(1.6);
     padding-top: 8px;
 }
 
 .about-me__info--title {
+    display: flex;
     margin-bottom: 16px;
     overflow: hidden;
     white-space: nowrap;
