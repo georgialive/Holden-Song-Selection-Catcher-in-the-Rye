@@ -308,42 +308,36 @@ SONGS SECTION
     margin-bottom: 80px;
 }
 
-.accordion__mask {
-    border-radius: 12px;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     font-family:'Montserrat Alternates', sans-serif;
     background-color: #828282;
     color: white;
     cursor: pointer;
-    padding: 40px;
+    padding: 18px;
     width: 100%;
     text-align: center;
-    border-color: transparent;
+    border: none;
     outline: none;
     transition: 0.4s;
 }
   
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .accordion:hover {
     background-color: white;
     color: #000;
 }
   
-/* Style the accordion panel. Note: hidden by default */
+
 .panel {
-    padding: 18px;
+    padding: 0 18px;
     background-color: white;
-    max-height: 0;
     display: none;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }
+  
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795'; 
     font-size: 13px;
     color: #828282;
     float: right;
@@ -351,5 +345,6 @@ SONGS SECTION
 }
   
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
 }
+
