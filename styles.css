@@ -313,7 +313,7 @@ SONGS SECTION
     background-color: #828282;
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 40px;
     width: 100%;
     text-align: center;
     border: none;
@@ -329,10 +329,16 @@ SONGS SECTION
   
 
 .panel {
-    padding: 0 18px;
+    padding: 18px;
     background-color: white;
-    display: none;
+    display: block;
     overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.panel.active {
+    background-color: white;
+    color: black;
 }
   
 
@@ -346,5 +352,7 @@ SONGS SECTION
   
 .active:after {
     content: "\2796";
+    background-color: white;
+    color: #000;
 }
 
