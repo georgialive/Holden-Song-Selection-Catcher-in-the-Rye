@@ -1,4 +1,4 @@
-/* eslint-disable react-initialize-state */
+
 
 let acc = document.getElementsByClassName("accordion");
 let i;
